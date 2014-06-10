@@ -50,7 +50,6 @@
 		F0C8EEF319405A4700EAC2DE /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEE819405A4700EAC2DE /* UIView+Addition.m */; };
 		F0C8EEF419405A4700EAC2DE /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEEA19405A4700EAC2DE /* UIViewController+Addition.m */; };
 		F0C8EEF919405B2A00EAC2DE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEF819405B2A00EAC2DE /* MainViewController.m */; };
-		F0C8EEFC19405B4C00EAC2DE /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEFB19405B4C00EAC2DE /* LeftViewController.m */; };
 		F0C8EEFF19405B9100EAC2DE /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */; };
 		F0C8EF0219405D2000EAC2DE /* leftMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C8EF0119405D2000EAC2DE /* leftMenu.png */; };
 /* End PBXBuildFile section */
@@ -156,8 +155,6 @@
 		F0C8EEF619405ACA00EAC2DE /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		F0C8EEF719405B2A00EAC2DE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F0C8EEF819405B2A00EAC2DE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		F0C8EEFA19405B4C00EAC2DE /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		F0C8EEFB19405B4C00EAC2DE /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherViewController.h; sourceTree = "<group>"; };
 		F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
 		F0C8EF0119405D2000EAC2DE /* leftMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftMenu.png; sourceTree = "<group>"; };
@@ -325,8 +322,6 @@
 				F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */,
 				F0C8EEF719405B2A00EAC2DE /* MainViewController.h */,
 				F0C8EEF819405B2A00EAC2DE /* MainViewController.m */,
-				F0C8EEFA19405B4C00EAC2DE /* LeftViewController.h */,
-				F0C8EEFB19405B4C00EAC2DE /* LeftViewController.m */,
 				F0A20A2E1946A37800444593 /* ScratchViewController.h */,
 				F0A20A2F1946A37800444593 /* ScratchViewController.m */,
 				F027C6FD1941865F006CF247 /* MainTopCell.xib */,
@@ -528,7 +523,6 @@
 				F0C8EEF319405A4700EAC2DE /* UIView+Addition.m in Sources */,
 				F0C8EEEE19405A4700EAC2DE /* UIColor+Addition.m in Sources */,
 				F0A20A301946A37800444593 /* ScratchViewController.m in Sources */,
-				F0C8EEFC19405B4C00EAC2DE /* LeftViewController.m in Sources */,
 				F0C8EEFF19405B9100EAC2DE /* FatherViewController.m in Sources */,
 				F0C8EEF219405A4700EAC2DE /* UIScrollView+Addition.m in Sources */,
 				F0C8EEF019405A4700EAC2DE /* UIImageView+Addition.m in Sources */,

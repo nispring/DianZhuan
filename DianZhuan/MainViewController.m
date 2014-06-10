@@ -31,7 +31,9 @@
 
 - (void)loadView{
     [super loadView];
-    
+    if(IOS_7){
+        self.edgesForExtendedLayout = 0;
+    }
 
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"MainTopCell"owner:self options:nil];
     self.mainTopCell = [nib objectAtIndex:0];
