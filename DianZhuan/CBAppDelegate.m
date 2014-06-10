@@ -9,9 +9,14 @@
 #import "CBAppDelegate.h"
 
 
-#import "MFSideMenuContainerViewController.h"
 #import "MainViewController.h"
-#import "LeftViewController.h"
+
+#import "YouMiConfig.h"
+
+#import "PunchBoxAd.h"
+
+#import "MiidiManager.h"
+#import "MiidiAdWallShowAppOffersDelegate.h"
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -21,17 +26,24 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    MFSideMenuContainerViewController *mfsilderVC = [[MFSideMenuContainerViewController alloc]init];
     MainViewController *mainVC = [[MainViewController alloc]init];
     UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:mainVC];
-    LeftViewController *rightVC = [[LeftViewController alloc]init];
-    UINavigationController *rightNav = [[UINavigationController alloc]initWithRootViewController:rightVC];
-    [mfsilderVC setLeftMenuViewController:rightNav];
-    [mfsilderVC setCenterViewController:mainNav];
-    mfsilderVC.leftMenuWidth = 270.0f;
-    self.window.rootViewController = mfsilderVC;
+    self.window.rootViewController = mainNav;
 
     [self.window makeKeyAndVisible];
+    
+    
+    //有米
+    [YouMiConfig setUseInAppStore:YES];  // [可选]开启内置appStore，详细请看YouMiSDK常见问题解答
+    [YouMiConfig launchWithAppID:@"5a48640be63febb1" appSecret:@"67ed4b5d4db14682"];
+    [YouMiConfig setFullScreenWindow:self.window];
+    
+    //触控
+    [PunchBoxAd startSession:@"100032-4CE817-ABA2-5B48-14D009296720"];
+
+    //米迪
+    [MiidiManager setAppPublisher:@"17820"  withAppSecret:(NSString *)@"9herzd6l8aaj2q5t" ];
+
     return YES;
 }
 

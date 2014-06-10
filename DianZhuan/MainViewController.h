@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : FatherViewController
+@interface MainViewController : UITableViewController
 
 @end
