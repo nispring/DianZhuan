@@ -8,6 +8,10 @@
 
 #import "CBAppDelegate.h"
 
+
+#import "MFSideMenuContainerViewController.h"
+#import "MainViewController.h"
+#import "LeftViewController.h"
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +19,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    MFSideMenuContainerViewController *mfsilderVC = [[MFSideMenuContainerViewController alloc]init];
+    MainViewController *mainVC = [[MainViewController alloc]init];
+    UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    LeftViewController *rightVC = [[LeftViewController alloc]init];
+    UINavigationController *rightNav = [[UINavigationController alloc]initWithRootViewController:rightVC];
+    [mfsilderVC setLeftMenuViewController:rightNav];
+    [mfsilderVC setCenterViewController:mainNav];
+    mfsilderVC.leftMenuWidth = 270.0f;
+    self.window.rootViewController = mfsilderVC;
+
     [self.window makeKeyAndVisible];
     return YES;
 }
