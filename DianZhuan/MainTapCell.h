@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MainTapCell : UITableViewCell
+- (IBAction)MoneyDetailChick:(id)sender;
+- (IBAction)MoneyExchangeChick:(id)sender;
 
 @end

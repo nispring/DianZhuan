@@ -1,14 +1,14 @@
 //
-//  MainTapCell.m
+//  MoneyDetailTopCell.m
 //  DianZhuan
 //
-//  Created by 时代合盛 on 14-6-6.
+//  Created by 时代合盛 on 14-6-11.
 //  Copyright (c) 2014年 时代合盛. All rights reserved.
 //
 
-#import "MainTapCell.h"
+#import "MoneyDetailTopCell.h"
 
-@implementation MainTapCell
+@implementation MoneyDetailTopCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -31,11 +31,4 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)MoneyDetailChick:(id)sender {
-    [NOTIFICATION_CENTER postNotificationName:@"PushMoneyDetail" object:nil];
-}
-
-- (IBAction)MoneyExchangeChick:(id)sender {
-    [NOTIFICATION_CENTER postNotificationName:@"PushMoneyExchange" object:nil];
-}
 @end

@@ -26,8 +26,19 @@
 		F0A20A2C1946A2A500444593 /* MDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A291946A2A500444593 /* MDMatrix.m */; };
 		F0A20A2D1946A2A500444593 /* MDScratchImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A2B1946A2A500444593 /* MDScratchImageView.mm */; };
 		F0A20A301946A37800444593 /* ScratchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A2F1946A37800444593 /* ScratchViewController.m */; };
-		F0A20A321946A55800444593 /* lottery_award@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A20A311946A55800444593 /* lottery_award@2x.png */; };
-		F0A20A341946A8CE00444593 /* paint01-01blur.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A20A331946A8CE00444593 /* paint01-01blur.png */; };
+		F0A20A9F19482B1500444593 /* TurntableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A9E19482B1500444593 /* TurntableViewController.m */; };
+		F0A20AB219483C7400444593 /* disk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AAE19483C7400444593 /* disk.jpg */; };
+		F0A20AB319483C7400444593 /* lottery_award@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AAF19483C7400444593 /* lottery_award@2x.png */; };
+		F0A20AB419483C7400444593 /* paint01-01blur.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AB019483C7400444593 /* paint01-01blur.png */; };
+		F0A20AB519483C7400444593 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AB119483C7400444593 /* start.png */; };
+		F0A20ABE194845B700444593 /* MoneyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20ABD194845B700444593 /* MoneyDetailViewController.m */; };
+		F0A20AC1194845C800444593 /* MoneyExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AC0194845C800444593 /* MoneyExchangeViewController.m */; };
+		F0A20AC519484E3B00444593 /* MoneyExchangeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AC319484E3B00444593 /* MoneyExchangeDetailViewController.m */; };
+		F0A20AC619484E3B00444593 /* MoneyExchangeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AC419484E3B00444593 /* MoneyExchangeDetailViewController.xib */; };
+		F0A20ACA1948580600444593 /* MoneyDetailTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AC91948580600444593 /* MoneyDetailTopCell.m */; };
+		F0A20ACE19485B1D00444593 /* MoneyDetailTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A20ACD19485B1D00444593 /* MoneyDetailTopCell.xib */; };
+		F0A20AD119485BF900444593 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AD019485BF900444593 /* QuestionViewController.m */; };
+		F0A20AD6194861A600444593 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AD5194861A600444593 /* TaskListViewController.m */; };
 		F0C8EEA21940598B00EAC2DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA11940598B00EAC2DE /* Foundation.framework */; };
 		F0C8EEA41940598B00EAC2DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA31940598B00EAC2DE /* CoreGraphics.framework */; };
 		F0C8EEA61940598B00EAC2DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA51940598B00EAC2DE /* UIKit.framework */; };
@@ -51,7 +62,6 @@
 		F0C8EEF419405A4700EAC2DE /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEEA19405A4700EAC2DE /* UIViewController+Addition.m */; };
 		F0C8EEF919405B2A00EAC2DE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEF819405B2A00EAC2DE /* MainViewController.m */; };
 		F0C8EEFF19405B9100EAC2DE /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */; };
-		F0C8EF0219405D2000EAC2DE /* leftMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C8EF0119405D2000EAC2DE /* leftMenu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +125,26 @@
 		F0A20A2B1946A2A500444593 /* MDScratchImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MDScratchImageView.mm; sourceTree = "<group>"; };
 		F0A20A2E1946A37800444593 /* ScratchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchViewController.h; sourceTree = "<group>"; };
 		F0A20A2F1946A37800444593 /* ScratchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchViewController.m; sourceTree = "<group>"; };
-		F0A20A311946A55800444593 /* lottery_award@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lottery_award@2x.png"; sourceTree = "<group>"; };
-		F0A20A331946A8CE00444593 /* paint01-01blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paint01-01blur.png"; sourceTree = "<group>"; };
+		F0A20A9D19482B1500444593 /* TurntableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableViewController.h; sourceTree = "<group>"; };
+		F0A20A9E19482B1500444593 /* TurntableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableViewController.m; sourceTree = "<group>"; };
+		F0A20AAE19483C7400444593 /* disk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disk.jpg; sourceTree = "<group>"; };
+		F0A20AAF19483C7400444593 /* lottery_award@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lottery_award@2x.png"; sourceTree = "<group>"; };
+		F0A20AB019483C7400444593 /* paint01-01blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paint01-01blur.png"; sourceTree = "<group>"; };
+		F0A20AB119483C7400444593 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		F0A20ABC194845B700444593 /* MoneyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyDetailViewController.h; sourceTree = "<group>"; };
+		F0A20ABD194845B700444593 /* MoneyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyDetailViewController.m; sourceTree = "<group>"; };
+		F0A20ABF194845C800444593 /* MoneyExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyExchangeViewController.h; sourceTree = "<group>"; };
+		F0A20AC0194845C800444593 /* MoneyExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyExchangeViewController.m; sourceTree = "<group>"; };
+		F0A20AC219484E3B00444593 /* MoneyExchangeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyExchangeDetailViewController.h; sourceTree = "<group>"; };
+		F0A20AC319484E3B00444593 /* MoneyExchangeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyExchangeDetailViewController.m; sourceTree = "<group>"; };
+		F0A20AC419484E3B00444593 /* MoneyExchangeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyExchangeDetailViewController.xib; sourceTree = "<group>"; };
+		F0A20AC81948580600444593 /* MoneyDetailTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyDetailTopCell.h; sourceTree = "<group>"; };
+		F0A20AC91948580600444593 /* MoneyDetailTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyDetailTopCell.m; sourceTree = "<group>"; };
+		F0A20ACD19485B1D00444593 /* MoneyDetailTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyDetailTopCell.xib; sourceTree = "<group>"; };
+		F0A20ACF19485BF900444593 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		F0A20AD019485BF900444593 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		F0A20AD4194861A600444593 /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		F0A20AD5194861A600444593 /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
 		F0C8EE9E1940598B00EAC2DE /* DianZhuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianZhuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C8EEA11940598B00EAC2DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F0C8EEA31940598B00EAC2DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,7 +185,6 @@
 		F0C8EEF819405B2A00EAC2DE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherViewController.h; sourceTree = "<group>"; };
 		F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
-		F0C8EF0119405D2000EAC2DE /* leftMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftMenu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +296,137 @@
 			path = MDScratchImageView;
 			sourceTree = "<group>";
 		};
+		F0A20AA61948330100444593 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20AA71948331200444593 /* View */,
+				F0C8EED619405A3C00EAC2DE /* Category */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		F0A20AA71948331200444593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F0A20AA81948333100444593 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */,
+				F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */,
+				F0A20AD31948618F00444593 /* TaskList */,
+				F0A20AD219485BFF00444593 /* Question */,
+				F0A20ABB1948456B00444593 /* MoneyExchange */,
+				F0A20ABA1948456200444593 /* MoneyDetail */,
+				F0A20AB91948450E00444593 /* Turntable */,
+				F0A20AB8194844FF00444593 /* Scratch */,
+				F0A20AB6194843AD00444593 /* Index */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0A20AAD19483C7400444593 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20AAE19483C7400444593 /* disk.jpg */,
+				F0A20AAF19483C7400444593 /* lottery_award@2x.png */,
+				F0A20AB019483C7400444593 /* paint01-01blur.png */,
+				F0A20AB119483C7400444593 /* start.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F0A20AB6194843AD00444593 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				F0C8EEF719405B2A00EAC2DE /* MainViewController.h */,
+				F0C8EEF819405B2A00EAC2DE /* MainViewController.m */,
+				F0A20AB7194843BF00444593 /* Cell */,
+			);
+			name = Index;
+			sourceTree = "<group>";
+		};
+		F0A20AB7194843BF00444593 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F027C6FD1941865F006CF247 /* MainTopCell.xib */,
+				F027C6FF19418690006CF247 /* MainTapCell.h */,
+				F027C70019418690006CF247 /* MainTapCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F0A20AB8194844FF00444593 /* Scratch */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20A2E1946A37800444593 /* ScratchViewController.h */,
+				F0A20A2F1946A37800444593 /* ScratchViewController.m */,
+			);
+			name = Scratch;
+			sourceTree = "<group>";
+		};
+		F0A20AB91948450E00444593 /* Turntable */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20A9D19482B1500444593 /* TurntableViewController.h */,
+				F0A20A9E19482B1500444593 /* TurntableViewController.m */,
+			);
+			name = Turntable;
+			sourceTree = "<group>";
+		};
+		F0A20ABA1948456200444593 /* MoneyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20ABC194845B700444593 /* MoneyDetailViewController.h */,
+				F0A20ABD194845B700444593 /* MoneyDetailViewController.m */,
+				F0A20AC7194857DC00444593 /* Cell */,
+			);
+			name = MoneyDetail;
+			sourceTree = "<group>";
+		};
+		F0A20ABB1948456B00444593 /* MoneyExchange */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20ABF194845C800444593 /* MoneyExchangeViewController.h */,
+				F0A20AC0194845C800444593 /* MoneyExchangeViewController.m */,
+				F0A20AC219484E3B00444593 /* MoneyExchangeDetailViewController.h */,
+				F0A20AC319484E3B00444593 /* MoneyExchangeDetailViewController.m */,
+				F0A20AC419484E3B00444593 /* MoneyExchangeDetailViewController.xib */,
+			);
+			name = MoneyExchange;
+			sourceTree = "<group>";
+		};
+		F0A20AC7194857DC00444593 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20AC81948580600444593 /* MoneyDetailTopCell.h */,
+				F0A20AC91948580600444593 /* MoneyDetailTopCell.m */,
+				F0A20ACD19485B1D00444593 /* MoneyDetailTopCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F0A20AD219485BFF00444593 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20ACF19485BF900444593 /* QuestionViewController.h */,
+				F0A20AD019485BF900444593 /* QuestionViewController.m */,
+			);
+			name = Question;
+			sourceTree = "<group>";
+		};
+		F0A20AD31948618F00444593 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				F0A20AD4194861A600444593 /* TaskListViewController.h */,
+				F0A20AD5194861A600444593 /* TaskListViewController.m */,
+			);
+			name = TaskList;
+			sourceTree = "<group>";
+		};
 		F0C8EE951940598B00EAC2DE = {
 			isa = PBXGroup;
 			children = (
@@ -311,23 +469,13 @@
 		F0C8EEA71940598B00EAC2DE /* DianZhuan */ = {
 			isa = PBXGroup;
 			children = (
-				F0A20A331946A8CE00444593 /* paint01-01blur.png */,
-				F0A20A311946A55800444593 /* lottery_award@2x.png */,
-				F0C8EF0019405BF100EAC2DE /* Imagse */,
-				F0C8EED619405A3C00EAC2DE /* Additions */,
-				F0C8EED5194059B100EAC2DE /* Verder */,
+				F0A20AAD19483C7400444593 /* Images */,
+				F0A20AA61948330100444593 /* Custom */,
+				F0C8EED5194059B100EAC2DE /* External */,
+				F0A20AA81948333100444593 /* ViewControllers */,
+				F0C8EEB31940598B00EAC2DE /* Images.xcassets */,
 				F0C8EEB01940598B00EAC2DE /* CBAppDelegate.h */,
 				F0C8EEB11940598B00EAC2DE /* CBAppDelegate.m */,
-				F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */,
-				F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */,
-				F0C8EEF719405B2A00EAC2DE /* MainViewController.h */,
-				F0C8EEF819405B2A00EAC2DE /* MainViewController.m */,
-				F0A20A2E1946A37800444593 /* ScratchViewController.h */,
-				F0A20A2F1946A37800444593 /* ScratchViewController.m */,
-				F027C6FD1941865F006CF247 /* MainTopCell.xib */,
-				F027C6FF19418690006CF247 /* MainTapCell.h */,
-				F027C70019418690006CF247 /* MainTapCell.m */,
-				F0C8EEB31940598B00EAC2DE /* Images.xcassets */,
 				F0C8EEA81940598B00EAC2DE /* Supporting Files */,
 			);
 			path = DianZhuan;
@@ -364,7 +512,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F0C8EED5194059B100EAC2DE /* Verder */ = {
+		F0C8EED5194059B100EAC2DE /* External */ = {
 			isa = PBXGroup;
 			children = (
 				F0A20A271946A2A500444593 /* MDScratchImageView */,
@@ -372,10 +520,10 @@
 				F05C394919419FA400DDFC70 /* ChuKong */,
 				F027C70219418F0A006CF247 /* YouMi */,
 			);
-			name = Verder;
+			name = External;
 			sourceTree = "<group>";
 		};
-		F0C8EED619405A3C00EAC2DE /* Additions */ = {
+		F0C8EED619405A3C00EAC2DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				F0C8EED719405A4700EAC2DE /* NSString+Addition.h */,
@@ -397,15 +545,7 @@
 				F0C8EEE919405A4700EAC2DE /* UIViewController+Addition.h */,
 				F0C8EEEA19405A4700EAC2DE /* UIViewController+Addition.m */,
 			);
-			name = Additions;
-			sourceTree = "<group>";
-		};
-		F0C8EF0019405BF100EAC2DE /* Imagse */ = {
-			isa = PBXGroup;
-			children = (
-				F0C8EF0119405D2000EAC2DE /* leftMenu.png */,
-			);
-			name = Imagse;
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,12 +625,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F027C6FE1941865F006CF247 /* MainTopCell.xib in Resources */,
+				F0A20AB219483C7400444593 /* disk.jpg in Resources */,
+				F0A20AB519483C7400444593 /* start.png in Resources */,
 				F0C8EEAC1940598B00EAC2DE /* InfoPlist.strings in Resources */,
-				F0C8EF0219405D2000EAC2DE /* leftMenu.png in Resources */,
 				F0C8EEB41940598B00EAC2DE /* Images.xcassets in Resources */,
-				F0A20A321946A55800444593 /* lottery_award@2x.png in Resources */,
+				F0A20AB319483C7400444593 /* lottery_award@2x.png in Resources */,
 				F05C395419419FA400DDFC70 /* PunchBoxAdRes.bundle in Resources */,
-				F0A20A341946A8CE00444593 /* paint01-01blur.png in Resources */,
+				F0A20ACE19485B1D00444593 /* MoneyDetailTopCell.xib in Resources */,
+				F0A20AC619484E3B00444593 /* MoneyExchangeDetailViewController.xib in Resources */,
+				F0A20AB419483C7400444593 /* paint01-01blur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,21 +653,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C8EEAE1940598B00EAC2DE /* main.m in Sources */,
+				F0A20AD6194861A600444593 /* TaskListViewController.m in Sources */,
 				F0C8EEED19405A4700EAC2DE /* UIAlertView+Addition.m in Sources */,
 				F0A20A2D1946A2A500444593 /* MDScratchImageView.mm in Sources */,
 				F027C70119418690006CF247 /* MainTapCell.m in Sources */,
+				F0A20A9F19482B1500444593 /* TurntableViewController.m in Sources */,
 				F0C8EEF419405A4700EAC2DE /* UIViewController+Addition.m in Sources */,
 				F0C8EEEB19405A4700EAC2DE /* NSString+Addition.m in Sources */,
 				F0C8EEF919405B2A00EAC2DE /* MainViewController.m in Sources */,
 				F0A20A2C1946A2A500444593 /* MDMatrix.m in Sources */,
 				F0C8EEEC19405A4700EAC2DE /* NSTimer+Addition.m in Sources */,
+				F0A20AD119485BF900444593 /* QuestionViewController.m in Sources */,
 				F0C8EEEF19405A4700EAC2DE /* UIImage+Addition.m in Sources */,
 				F0C8EEB21940598B00EAC2DE /* CBAppDelegate.m in Sources */,
+				F0A20ABE194845B700444593 /* MoneyDetailViewController.m in Sources */,
 				F0C8EEF319405A4700EAC2DE /* UIView+Addition.m in Sources */,
 				F0C8EEEE19405A4700EAC2DE /* UIColor+Addition.m in Sources */,
 				F0A20A301946A37800444593 /* ScratchViewController.m in Sources */,
+				F0A20AC519484E3B00444593 /* MoneyExchangeDetailViewController.m in Sources */,
+				F0A20ACA1948580600444593 /* MoneyDetailTopCell.m in Sources */,
 				F0C8EEFF19405B9100EAC2DE /* FatherViewController.m in Sources */,
 				F0C8EEF219405A4700EAC2DE /* UIScrollView+Addition.m in Sources */,
+				F0A20AC1194845C800444593 /* MoneyExchangeViewController.m in Sources */,
 				F0C8EEF019405A4700EAC2DE /* UIImageView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
