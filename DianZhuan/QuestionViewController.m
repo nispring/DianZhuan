@@ -38,7 +38,7 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ID"];
     }
-    cell.textLabel.text = @"123456";
+    cell.textLabel.text = @"问题+回答";
     return cell;
 }
 - (void)didReceiveMemoryWarning

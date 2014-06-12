@@ -36,8 +36,8 @@
     if(IOS_7){
         self.edgesForExtendedLayout = 0;
     }
-    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(questionChick)];
-    self.navigationItem.rightBarButtonItem = rightBar;
+    UIBarButtonItem *bar = [[UIBarButtonItem alloc]initWithTitle:@"问题" style:UIBarButtonItemStyleDone target:self action:@selector(questionChick)];
+    self.navigationItem.rightBarButtonItem = bar;
     
 
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"MainTopCell"owner:self options:nil];
@@ -95,8 +95,15 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         if(indexPath.row==0){
             [cell.contentView addSubview:self.mainTopCell];
-        }else{
-            cell.textLabel.text = @"test1";
+        }
+        if(indexPath.row==1){
+            cell.textLabel.text = @"任务列表";
+        }
+        if(indexPath.row==2){
+            cell.textLabel.text = @"刮刮卡";
+        }
+        if(indexPath.row==3){
+            cell.textLabel.text = @"转盘";
         }
     }
     return cell;

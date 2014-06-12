@@ -32,8 +32,8 @@
     if(_type==1){
         _label1.text = @"111111";
         _label2.text = @"222222";
-        _label3.text = @"333333";
-        _label4.text = @"444444";
+        _label3.text = @"支付宝账号";
+        _label4.text = @"兑换金额";
     }
 }
 

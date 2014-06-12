@@ -55,7 +55,16 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ID"];
     }
-    cell.textLabel.text = @"test";
+    if(indexPath.row==0){
+        cell.textLabel.text = @"有米";
+    }
+    if(indexPath.row==1){
+        cell.textLabel.text = @"触控";
+    }
+    if(indexPath.row==2){
+        cell.textLabel.text = @"米迪";
+    }
+
     return cell;
 }
 

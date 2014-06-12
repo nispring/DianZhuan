@@ -37,7 +37,7 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ID"];
     }
-    cell.textLabel.text = indexPath.row==0?@"111111":@"222222";
+    cell.textLabel.text = indexPath.row==0?@"手机充值":@"支付宝提取";
     cell.detailTextLabel.text = indexPath.row==0?@"111111":@"222222";
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
