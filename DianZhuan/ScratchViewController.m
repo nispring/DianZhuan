@@ -7,7 +7,6 @@
 //
 
 #import "ScratchViewController.h"
-
 #import "MDScratchImageView.h"
 
 @interface ScratchViewController ()<MDScratchImageViewDelegate>

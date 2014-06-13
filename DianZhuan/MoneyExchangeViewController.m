@@ -16,10 +16,11 @@
 
 - (void)loadView{
     [super loadView];
+    self.title = @"现金提取";
     
     UITableView *table = [[UITableView alloc]init];
     [self.view addSubview:table];
-    table.frame =  self.view.frame;
+    table.frame = CGRectMake(0, 0, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT-64);
     table.dataSource = self;
     table.delegate = self;
     table.rowHeight = 70.0f;
@@ -37,8 +38,9 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ID"];
     }
-    cell.textLabel.text = indexPath.row==0?@"手机充值":@"支付宝提取";
-    cell.detailTextLabel.text = indexPath.row==0?@"111111":@"222222";
+    cell.textLabel.text = indexPath.row==0?@"话费充值":@"支付宝提取";
+    cell.detailTextLabel.text = indexPath.row==0?@"快速充值，充得多送得多":@"直接提现，快速安全";
+    cell.detailTextLabel.textColor = [UIColor grayColor];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

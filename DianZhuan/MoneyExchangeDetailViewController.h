@@ -12,11 +12,9 @@
 
 
 @property (nonatomic)int type;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
 @property (weak, nonatomic) IBOutlet UILabel *label3;
-@property (weak, nonatomic) IBOutlet UILabel *label4;
 
 
 @property (weak, nonatomic) IBOutlet UITextField *inputTF;

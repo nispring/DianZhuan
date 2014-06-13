@@ -7,30 +7,41 @@
 //
 
 #import "TaskListViewController.h"
-
+#import "TaskCell.h"
 
 #import "YouMiWall.h"
 #import "YouMiPointsManager.h"
 
 #import "PunchBoxAd.h"
 
-#import "MiidiAdWall.h"
+#import "DMOfferWallManager.h"
 
-@interface TaskListViewController ()<UITableViewDelegate,UITableViewDataSource,PBOfferWallDelegate,MiidiAdWallShowAppOffersDelegate>
+#import "AppConnect.h"
+@interface TaskListViewController ()<UITableViewDelegate,UITableViewDataSource,PBOfferWallDelegate,DMOfferWallManagerDelegate>
 
+
+@property (nonatomic,strong)DMOfferWallManager *dmManager;
+@property (nonatomic,strong)NSArray *dataArray;
+@property (nonatomic,strong)UITableView *table;
 @end
 
 @implementation TaskListViewController
 
 - (void)loadView{
     [super loadView];
+    self.title = @"任务列表";
+    self.dataArray =
+  @[@{@"icon":@"icon_youmi@2x",@"title":@"有米平台",@"subTitle":@"200积分=1金币"},
+  @{@"icon":@"icon_youmi@2x",@"title":@"触控平台",@"subTitle":@"200积分=1金币"},
+  @{@"icon":@"icon_youmi@2x",@"title":@"多盟平台 ",@"subTitle":@"1金币=1金币"},
+  @{@"icon":@"icon_youmi@2x",@"title":@"万普平台",@"subTitle":@"200积分=1金币"}];
     
-    UITableView *table = [[UITableView alloc]init];
-    [self.view addSubview:table];
-    table.dataSource = self;
-    table.delegate = self;
-    table.frame = self.view.frame;
-    table.tableFooterView = [[UIView alloc]init];
+    self.table = [[UITableView alloc]init];
+    [self.view addSubview:self.table];
+    self.table.dataSource = self;
+    self.table.delegate = self;
+    self.table.frame = CGRectMake(0, 0, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT-64);
+    self.table.tableFooterView = [[UIView alloc]init];
 }
 
 - (void)viewDidLoad
@@ -46,30 +57,37 @@
     
     //触控
     [PBOfferWall sharedOfferWall].delegate = self;
-
+    
+    //多盟
+    self.dmManager = [[DMOfferWallManager alloc] initWithPublisherID:@"96ZJ056QzeFWrwTBvy"andUserID:nil];
+    self.dmManager.delegate = self;
+    // !!!:重要：如果需要禁用应用内下载，请将此值设置为YES。
+    self.dmManager.disableStoreKit = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onOfferClosed:) name:WAPS_OFFER_CLOSED object:nil];
 }
-
-
+//万普通知
+-(void)onOfferClosed:(NSNotification*)notifyObj{
+    DLog(@"万普通知%@",[notifyObj object]);
+    
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ID"];
-    if(cell == nil){
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ID"];
+    
+    TaskCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ID"];
+    if(cell==nil){
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TaskCell" owner:self options:nil] lastObject];
     }
-    if(indexPath.row==0){
-        cell.textLabel.text = @"有米";
-    }
-    if(indexPath.row==1){
-        cell.textLabel.text = @"触控";
-    }
-    if(indexPath.row==2){
-        cell.textLabel.text = @"米迪";
-    }
-
+    cell.icon.image = [UIImage imageNamed:_dataArray[indexPath.row][@"icon"]];
+    cell.titleLabel.text = _dataArray[indexPath.row][@"title"];
+    cell.subTitleLabel.text = _dataArray[indexPath.row][@"subTitle"];
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [self tableView:_table cellForRowAtIndexPath:indexPath];
+    return cell.height;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return _dataArray.count;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
@@ -84,8 +102,10 @@
 
     }
     if(indexPath.row == 2){
-        [MiidiAdWall showAppOffers:self withDelegate:self];
-
+        [_dmManager presentOfferWallWithViewController:self type:eDMOfferWallTypeList];
+    }
+    if(indexPath.row == 3){
+        [AppConnect showOffers:self]; //⽀支持横竖屏⾃自动切换
     }
 
 }

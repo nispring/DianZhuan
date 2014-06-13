@@ -25,7 +25,7 @@
     if(IOS_7){
         self.edgesForExtendedLayout = 0;
     }
-    
+    self.title = @"收支明细";
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"MoneyDetailTopCell"owner:self options:nil];
     self.moneyDetailTopCell = [nib objectAtIndex:0];
 
@@ -34,6 +34,9 @@
     self.refreshControl.tintColor = [UIColor grayColor];
     self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
     [self.refreshControl addTarget:self action:@selector(refreshView:) forControlEvents:UIControlEventValueChanged];
+    
+    self.tableView.tableFooterView = [[UIView alloc]init];
+    self.tableView.backgroundColor = [UIColor colorWithStr:@"edf1f2"];
 
 }
 
@@ -41,18 +44,19 @@
     static NSString *identifier = @"ID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if(cell == nil){
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     if(indexPath.row==0){
         [cell.contentView addSubview:_moneyDetailTopCell];
     }else{
-        cell.textLabel.text = @"test1";
+        cell.textLabel.text = @"首次安装";
+        cell.detailTextLabel.text = @"+1";
     }
 
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return 2;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row==0){

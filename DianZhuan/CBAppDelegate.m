@@ -15,8 +15,7 @@
 
 #import "PunchBoxAd.h"
 
-#import "MiidiManager.h"
-#import "MiidiAdWallShowAppOffersDelegate.h"
+#import "AppConnect.h"
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -24,7 +23,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+   
+    //修改navigation字体
+    NSDictionary *dict=[NSDictionary dictionaryWithObjects:
+                        [NSArray arrayWithObjects:[UIColor orangeColor],[UIFont boldSystemFontOfSize:20],[UIColor clearColor],nil] forKeys:
+                        [NSArray arrayWithObjects:UITextAttributeTextColor,UITextAttributeFont,UITextAttributeTextShadowColor,nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:dict];
     
+    //设置navigation背景色
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithFileName:IOS_7?@"navigationbar":@"navigationbar_44"] forBarMetrics:UIBarMetricsDefault];
+
     MainViewController *mainVC = [[MainViewController alloc]init];
     UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:mainVC];
     self.window.rootViewController = mainNav;
@@ -40,9 +48,8 @@
     //触控
     [PunchBoxAd startSession:@"100032-4CE817-ABA2-5B48-14D009296720"];
 
-    //米迪
-    [MiidiManager setAppPublisher:@"17820"  withAppSecret:(NSString *)@"9herzd6l8aaj2q5t" ];
-
+    //万普
+    [AppConnect getConnect:@"38718de31b979ca9792dd462523c68c2" pid:@"appstore"];
     return YES;
 }
 
