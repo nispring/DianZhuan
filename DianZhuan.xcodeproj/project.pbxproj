@@ -76,6 +76,8 @@
 		F0C8EEF419405A4700EAC2DE /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEEA19405A4700EAC2DE /* UIViewController+Addition.m */; };
 		F0C8EEF919405B2A00EAC2DE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEF819405B2A00EAC2DE /* MainViewController.m */; };
 		F0C8EEFF19405B9100EAC2DE /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */; };
+		F0DF0F8B194B02240079E8B9 /* navigationbar_44.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DF0F89194B02240079E8B9 /* navigationbar_44.png */; };
+		F0DF0F8C194B02240079E8B9 /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DF0F8A194B02240079E8B9 /* navigationbar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +220,8 @@
 		F0C8EEF819405B2A00EAC2DE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherViewController.h; sourceTree = "<group>"; };
 		F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
+		F0DF0F89194B02240079E8B9 /* navigationbar_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_44.png; sourceTree = "<group>"; };
+		F0DF0F8A194B02240079E8B9 /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +421,8 @@
 		F0A20AAD19483C7400444593 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F0DF0F89194B02240079E8B9 /* navigationbar_44.png */,
+				F0DF0F8A194B02240079E8B9 /* navigationbar.png */,
 				F04DA120194AECFE00997E10 /* vertical.png */,
 				F04DA11E194ADBF000997E10 /* line.png */,
 				F04DA11A194AD28600997E10 /* icon_change_accessory@2x.png */,
@@ -725,6 +731,7 @@
 				F04DA10E194AA08E00997E10 /* QuestionCell.xib in Resources */,
 				F0A20AB219483C7400444593 /* disk.jpg in Resources */,
 				F04DA11F194ADBF000997E10 /* line.png in Resources */,
+				F0DF0F8C194B02240079E8B9 /* navigationbar.png in Resources */,
 				F0A20AB519483C7400444593 /* start.png in Resources */,
 				F04DA114194ACF2500997E10 /* TaskCell.xib in Resources */,
 				F0C8EEAC1940598B00EAC2DE /* InfoPlist.strings in Resources */,
@@ -732,6 +739,7 @@
 				F0C8EEB41940598B00EAC2DE /* Images.xcassets in Resources */,
 				F0A20AB319483C7400444593 /* lottery_award@2x.png in Resources */,
 				F05C395419419FA400DDFC70 /* PunchBoxAdRes.bundle in Resources */,
+				F0DF0F8B194B02240079E8B9 /* navigationbar_44.png in Resources */,
 				F04DA11B194AD28600997E10 /* icon_change_accessory@2x.png in Resources */,
 				F0A20ACE19485B1D00444593 /* MoneyDetailTopCell.xib in Resources */,
 				F04DA119194AD19D00997E10 /* icon_youmi@2x.png in Resources */,
