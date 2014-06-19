@@ -10,6 +10,7 @@
 
 @interface MoneyExchangeDetailViewController ()<UIActionSheetDelegate>
 
+@property (nonatomic)NSString *expendIntegral;
 @end
 
 @implementation MoneyExchangeDetailViewController
@@ -46,20 +47,34 @@
     [_inputTF resignFirstResponder];
     UIActionSheet *sheet;
     if(_type==1){
-        sheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"10元 = 10金币",@"30元 = 28金币",@"50元 = 46金币",@"100元 = 90金币", nil];
+        sheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"10元 = 1000积分",@"30元 = 2800积分",@"50元 = 4600积分",@"100元 = 9000积分", nil];
 
     }else{
-        sheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"10元话费 = 10金币",@"30元话费 = 28金币",@"50元话费 = 46金币",@"100元话费 = 90金币", nil];
+        sheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"10元话费 = 1000积分",@"30元话费 = 2800积分",@"50元话费 = 4600积分",@"100元话费 = 9000积分", nil];
     }
     [sheet showInView:self.view];
 
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSString *str;
-    if(buttonIndex==0) str = @"10元";
-    if(buttonIndex==1) str = @"30元";
-    if(buttonIndex==2) str = @"50元";
-    if(buttonIndex==3) str = @"100元";
+    switch (buttonIndex) {
+        case 0:
+            str = @"10元";
+            self.expendIntegral = @"1000";
+            break;
+        case 1:
+            str = @"30元";
+            self.expendIntegral = @"2800";
+            break;
+        case 2:
+            str = @"50元";
+            self.expendIntegral = @"4600";
+            break;
+        case 3:
+            str = @"100元";
+            self.expendIntegral = @"9000";
+            break;
+    }
     [self.selectBTN setTitle:str forState:UIControlStateNormal];
 }
 - (IBAction)PutChick:(id)sender {
@@ -67,9 +82,43 @@
         [UIAlertView showAlertViewWithMessage:@"请完整填写"];
         return;
     }
-    if(![self.inputTF.text isPhoneNumber]){
+    if(![self.inputTF.text isPhoneNumber]&&_type==0){
         [UIAlertView showAlertViewWithMessage:@"手机号格式错误"];
         return;
     }
+    NSString *totalIntrgral = [CBKeyChain load:TOTOLINTEGRAL];
+    if([_expendIntegral intValue]>[totalIntrgral intValue]){
+        [MBHUDView hudWithBody:@"您的积分不足" type:MBAlertViewHUDTypeExclamationMark hidesAfter:2.5 show:YES];
+    }else{
+        NSString *nowIntegral = [NSString stringWithFormat:@"%d",[totalIntrgral intValue]-[_expendIntegral intValue]];
+        [CBKeyChain save:TOTOLINTEGRAL data:nowIntegral]; //保存剩余积分
+        NSString *nowExpend =  [NSString stringWithFormat:@"%d",[[CBKeyChain load:EXPEND] intValue]+[_expendIntegral intValue]];       //记录花费积分
+        [CBKeyChain save:EXPEND data:nowExpend];
+        [[RecordManager sharedRecordManager]updateRecordWithContent:(_type==1?@"积分提现（支付宝）":@"积分提现（手机充值）") andIntegral:[NSString stringWithFormat:@"-%@",_expendIntegral]];
+        
+        //通知刷新积分
+        [NOTIFICATION_CENTER postNotificationName:@"UpdateIntegral" object:nil];
+        
+        [MBHUDView hudWithBody:nil type:MBAlertViewHUDTypeActivityIndicator hidesAfter:100.0 show:YES];
+        
+        //写入服务器
+        BmobObject *gameScore = [BmobObject objectWithClassName:@"ApplyRecord"];
+        [gameScore setObject:[CBKeyChain load:USERID] forKey:USERID];
+        [gameScore setObject:_inputTF.text forKey:@"account"];
+        [gameScore setObject:_expendIntegral forKey:@"applyMoney"];
+        [gameScore setObject:[CBKeyChain load:TOTOLINTEGRAL] forKey:TOTOLINTEGRAL];
+
+        [gameScore setObject:_type==1?@"支付宝":@"手机充值" forKey:@"type"];
+        [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+            //进行操作
+            [MBHUDView dismissCurrentHUD];
+            MBAlertView *alert = [MBAlertView alertWithBody:@"提交成功，我们将在一个工作日内处理" cancelTitle:@"好的" cancelBlock:^{
+                [self.navigationController popViewControllerAnimated:YES];
+            }];
+            [alert addToDisplayQueue];
+
+        }];
+    }
+    
 }
 @end

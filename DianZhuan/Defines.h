@@ -23,15 +23,16 @@
 #define USER_DEFAULT                [NSUserDefaults standardUserDefaults]
 #define NOTIFICATION_CENTER         [NSNotificationCenter defaultCenter]
 
-#define USERNAME @"username"
-#define IS_LOGIN @"is_login"
-#define MiJia_INFO @"mijia_info"
-#define USER_INFO @"user_info"
-#define COOKIEADDRESS @"cookie_address"  //正式环境
+#define USERID @"userId"
+#define YOUMI @"youmi"
+#define CHUKONG @"chukong"
+#define DUOMENG @"duomeng"
+#define WANPU @"wanpu"
+#define MOPAN @"mopan"
+#define TOTOLINTEGRAL @"totalIntegral"
+#define INCOME @"income"
+#define EXPEND @"expend"
 
-#define KEY_USERNAME @"phone"
-#define KEY_PASSWORD @"pwd"
-#define KEY_USERNAME_PASSWORD @"phoneandpassword"
 
 #ifdef DEBUG
 #   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);

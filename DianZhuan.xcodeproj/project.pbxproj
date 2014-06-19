@@ -55,6 +55,7 @@
 		F076124919496F88003C3171 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F076124819496F87003C3171 /* CoreLocation.framework */; };
 		F076124B19497040003C3171 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F076124A19497040003C3171 /* libz.dylib */; };
 		F076125C19497C50003C3171 /* WapsOffer in Frameworks */ = {isa = PBXBuildFile; fileRef = F076125B19497C50003C3171 /* WapsOffer */; };
+		F08EF31F1952EFF400B49F8B /* RNGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EF31E1952EFF400B49F8B /* RNGridMenu.m */; };
 		F0A20A301946A37800444593 /* ScratchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A2F1946A37800444593 /* ScratchViewController.m */; };
 		F0A20A9F19482B1500444593 /* TurntableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20A9E19482B1500444593 /* TurntableViewController.m */; };
 		F0A20AB219483C7400444593 /* disk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0A20AAE19483C7400444593 /* disk.jpg */; };
@@ -68,7 +69,6 @@
 		F0A20ACA1948580600444593 /* MoneyDetailTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AC91948580600444593 /* MoneyDetailTopCell.m */; };
 		F0A20ACE19485B1D00444593 /* MoneyDetailTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A20ACD19485B1D00444593 /* MoneyDetailTopCell.xib */; };
 		F0A20AD119485BF900444593 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AD019485BF900444593 /* QuestionViewController.m */; };
-		F0A20AD6194861A600444593 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A20AD5194861A600444593 /* TaskListViewController.m */; };
 		F0C8EEA21940598B00EAC2DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA11940598B00EAC2DE /* Foundation.framework */; };
 		F0C8EEA41940598B00EAC2DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA31940598B00EAC2DE /* CoreGraphics.framework */; };
 		F0C8EEA61940598B00EAC2DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C8EEA51940598B00EAC2DE /* UIKit.framework */; };
@@ -223,6 +223,8 @@
 		F076125919497C50003C3171 /* WapsUserPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WapsUserPoints.h; sourceTree = "<group>"; };
 		F076125A19497C50003C3171 /* WapsUserPointsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WapsUserPointsManager.h; sourceTree = "<group>"; };
 		F076125B19497C50003C3171 /* WapsOffer */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = WapsOffer; sourceTree = "<group>"; };
+		F08EF31D1952EFF400B49F8B /* RNGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGridMenu.h; sourceTree = "<group>"; };
+		F08EF31E1952EFF400B49F8B /* RNGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGridMenu.m; sourceTree = "<group>"; };
 		F0A20A2E1946A37800444593 /* ScratchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchViewController.h; sourceTree = "<group>"; };
 		F0A20A2F1946A37800444593 /* ScratchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchViewController.m; sourceTree = "<group>"; };
 		F0A20A9D19482B1500444593 /* TurntableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableViewController.h; sourceTree = "<group>"; };
@@ -243,8 +245,6 @@
 		F0A20ACD19485B1D00444593 /* MoneyDetailTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyDetailTopCell.xib; sourceTree = "<group>"; };
 		F0A20ACF19485BF900444593 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		F0A20AD019485BF900444593 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
-		F0A20AD4194861A600444593 /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
-		F0A20AD5194861A600444593 /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
 		F0C8EE9E1940598B00EAC2DE /* DianZhuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianZhuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C8EEA11940598B00EAC2DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F0C8EEA31940598B00EAC2DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -449,16 +449,6 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		F04DA112194ACF1400997E10 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F04DA113194ACF2500997E10 /* TaskCell.xib */,
-				F04DA115194ACFBB00997E10 /* TaskCell.h */,
-				F04DA116194ACFBB00997E10 /* TaskCell.m */,
-			);
-			name = Cell;
-			sourceTree = "<group>";
-		};
 		F05C394919419FA400DDFC70 /* ChuKong */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,6 +560,15 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		F08EF31C1952EFF400B49F8B /* RNGridMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F08EF31D1952EFF400B49F8B /* RNGridMenu.h */,
+				F08EF31E1952EFF400B49F8B /* RNGridMenu.m */,
+			);
+			path = RNGridMenu;
+			sourceTree = "<group>";
+		};
 		F0A20AA61948330100444593 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +582,7 @@
 		F0A20AA71948331200444593 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F08EF31C1952EFF400B49F8B /* RNGridMenu */,
 				F007B86A195040C200558CD0 /* MBHUD */,
 				F076123519496D07003C3171 /* MDScratchImageView */,
 			);
@@ -594,7 +594,6 @@
 			children = (
 				F0C8EEFD19405B9100EAC2DE /* FatherViewController.h */,
 				F0C8EEFE19405B9100EAC2DE /* FatherViewController.m */,
-				F0A20AD31948618F00444593 /* TaskList */,
 				F0A20AD219485BFF00444593 /* Question */,
 				F0A20ABB1948456B00444593 /* MoneyExchange */,
 				F0A20ABA1948456200444593 /* MoneyDetail */,
@@ -638,6 +637,9 @@
 				F027C6FD1941865F006CF247 /* MainTopCell.xib */,
 				F027C6FF19418690006CF247 /* MainTapCell.h */,
 				F027C70019418690006CF247 /* MainTapCell.m */,
+				F04DA113194ACF2500997E10 /* TaskCell.xib */,
+				F04DA115194ACFBB00997E10 /* TaskCell.h */,
+				F04DA116194ACFBB00997E10 /* TaskCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -700,16 +702,6 @@
 				F04DA10C194AA07200997E10 /* Cell */,
 			);
 			name = Question;
-			sourceTree = "<group>";
-		};
-		F0A20AD31948618F00444593 /* TaskList */ = {
-			isa = PBXGroup;
-			children = (
-				F0A20AD4194861A600444593 /* TaskListViewController.h */,
-				F0A20AD5194861A600444593 /* TaskListViewController.m */,
-				F04DA112194ACF1400997E10 /* Cell */,
-			);
-			name = TaskList;
 			sourceTree = "<group>";
 		};
 		F0C8EE951940598B00EAC2DE = {
@@ -955,7 +947,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C8EEAE1940598B00EAC2DE /* main.m in Sources */,
-				F0A20AD6194861A600444593 /* TaskListViewController.m in Sources */,
 				F0C8EEED19405A4700EAC2DE /* UIAlertView+Addition.m in Sources */,
 				F027C70119418690006CF247 /* MainTapCell.m in Sources */,
 				F0383E7A195274EF00CEB75C /* CBKeyChain.m in Sources */,
@@ -969,6 +960,7 @@
 				F0C8EEEB19405A4700EAC2DE /* NSString+Addition.m in Sources */,
 				F007B886195040C200558CD0 /* MBHUDView.m in Sources */,
 				F0C8EEF919405B2A00EAC2DE /* MainViewController.m in Sources */,
+				F08EF31F1952EFF400B49F8B /* RNGridMenu.m in Sources */,
 				F0C8EEEC19405A4700EAC2DE /* NSTimer+Addition.m in Sources */,
 				F0A20AD119485BF900444593 /* QuestionViewController.m in Sources */,
 				F0C8EEEF19405A4700EAC2DE /* UIImage+Addition.m in Sources */,

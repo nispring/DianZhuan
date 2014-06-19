@@ -61,8 +61,8 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="expendLabel" destination="PW4-Fw-1AP" id="jsi-Bm-uZk"/>
                 <outlet property="incomeLabel" destination="Lre-Wo-Et0" id="CLh-ef-21K"/>
-                <outlet property="payLabel" destination="PW4-Fw-1AP" id="8ZQ-Nq-Yo9"/>
                 <outlet property="totalLabel" destination="kfe-BJ-4Ln" id="Fth-Kl-9ZP"/>
             </connections>
         </tableViewCell>

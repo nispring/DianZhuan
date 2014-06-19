@@ -12,6 +12,7 @@
 
 int main(int argc, char * argv[])
 {
+    [Bmob registerWithAppKey:@"5877c770f220c2d829aa38cd0dac848e"];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([CBAppDelegate class]));
     }

@@ -31,11 +31,4 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)MoneyDetailChick:(id)sender {
-    [NOTIFICATION_CENTER postNotificationName:@"PushMoneyDetail" object:nil];
-}
-
-- (IBAction)MoneyExchangeChick:(id)sender {
-    [NOTIFICATION_CENTER postNotificationName:@"PushMoneyExchange" object:nil];
-}
 @end

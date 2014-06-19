@@ -7,6 +7,6 @@
 //
 
 
-@interface MoneyDetailViewController : UITableViewController
+@interface MoneyDetailViewController : FatherViewController
 
 @end

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MainTapCell : UITableViewCell
-- (IBAction)MoneyDetailChick:(id)sender;
-- (IBAction)MoneyExchangeChick:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *integralLabel;
+@property (weak, nonatomic) IBOutlet UIButton *detailBtn;
+@property (weak, nonatomic) IBOutlet UIButton *extractBtn;
 
 @end
