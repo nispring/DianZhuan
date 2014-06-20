@@ -20,4 +20,5 @@
     #import "RecordManager.h"
     #import "Utility.h"
     #import "MBHUDView.h"
+    #import<ShareSDK/ShareSDK.h>
 #endif

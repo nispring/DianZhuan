@@ -5,46 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>35824C87-5649-4DDE-82AA-8E904763D1B7</string>
+	<string>95F56075-5FA1-4D18-BB93-A2FEADDDE8A2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DianZhuan</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4B28D970-12EF-49A6-A7F6-F99B77B5D842</key>
-		<string>ssh://github.com/liu541100186/DianZhuan.git</string>
-		<key>D31F25EB-E81B-422C-A8EF-3D138308CD8B</key>
-		<string>https://github.com/liu541100186/DianZhuan.git</string>
+		<key>FA07CAEE-F316-4DA3-96BE-CF25A906CE2E</key>
+		<string>https://github.com/nispring/DianZhuan.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DianZhuan.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4B28D970-12EF-49A6-A7F6-F99B77B5D842</key>
+		<key>FA07CAEE-F316-4DA3-96BE-CF25A906CE2E</key>
 		<string>../..</string>
-		<key>D31F25EB-E81B-422C-A8EF-3D138308CD8B</key>
-		<string>../../DianZhuan</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/liu541100186/DianZhuan.git</string>
+	<string>https://github.com/nispring/DianZhuan.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4B28D970-12EF-49A6-A7F6-F99B77B5D842</string>
+	<string>FA07CAEE-F316-4DA3-96BE-CF25A906CE2E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4B28D970-12EF-49A6-A7F6-F99B77B5D842</string>
-			<key>IDESourceControlWCCName</key>
-			<string>DianZhuan</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D31F25EB-E81B-422C-A8EF-3D138308CD8B</string>
+			<string>FA07CAEE-F316-4DA3-96BE-CF25A906CE2E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DianZhuan</string>
 		</dict>

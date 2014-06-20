@@ -14,6 +14,7 @@
 #import "MoneyExchangeViewController.h"
 #import "MoneyDetailViewController.h"
 #import "QuestionViewController.h"
+#import "ShareViewController.h"
 #import "TaskCell.h"
 
 #import "YouMiWall.h"
@@ -182,8 +183,11 @@
             [self showGrid];
             break;
         case 2:
-            DLog(@"分享");
+        {
+            ShareViewController *share=[[ShareViewController alloc]init];
+            [self.navigationController pushViewController:share animated:NO];
             break;
+        }
         case 3:
         case 4:;
             UIViewController *vc;

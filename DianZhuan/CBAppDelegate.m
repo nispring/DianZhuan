@@ -19,6 +19,13 @@
 
 #import "MobClick.h"
 
+#import "WXApi.h"
+
+#import <TencentOpenAPI/QQApi.h>
+
+#import <TencentOpenAPI/QQApiInterface.h>
+
+#import <TencentOpenAPI/TencentOAuth.h>
 @implementation CBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -82,6 +89,11 @@
         
     }
     [self initConfig];
+    
+    [ShareSDK registerApp:@"20c2d784a61f"];
+    [self initializePlat];
+    [self initializePlatForTrusteeship];
+
     return YES;
 }
 
@@ -102,6 +114,51 @@
     //万普
     [AppConnect getConnect:@"38718de31b979ca9792dd462523c68c2" pid:@"appstore"];
 }
+
+- (void)initializePlat{
+    //添加新浪微博应用
+    [ShareSDK connectSinaWeiboWithAppKey:@"552358160"
+                               appSecret:@"4802ceef3e4ae78442d10b20ee4e1375"
+                             redirectUri:@"http://dianzhuan.bmob.cn"];
+    //添加QQ空间应用
+    [ShareSDK connectQZoneWithAppKey:@"101127381"
+                           appSecret:@"332c9ac390b0a1d6909636edba11cf35"
+                   qqApiInterfaceCls:[QQApiInterface class]
+                     tencentOAuthCls:[TencentOAuth class]];
+    //添加微信应用
+    [ShareSDK connectWeChatWithAppId:@"wx8e9acd4aeb832e3d"
+                           wechatCls:[WXApi class]];
+}
+
+- (void)initializePlatForTrusteeship{
+    //导入微信需要的外部库类型，如果不需要微信分享可以不调用此方法
+    [ShareSDK importWeChatClass:[WXApi class]];
+    
+    //导入QQ互联和QQ好友分享需要的外部库类型，如果不需要QQ空间SSO和QQ好友分享可以不调用此方法
+    [ShareSDK importQQClass:[QQApiInterface class]
+            tencentOAuthCls:[TencentOAuth class]];
+    
+}
+
+- (BOOL)application:(UIApplication *)application
+      handleOpenURL:(NSURL *)url
+{
+    return [ShareSDK handleOpenURL:url
+                        wxDelegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [ShareSDK handleOpenURL:url
+                 sourceApplication:sourceApplication
+                        annotation:annotation
+                        wxDelegate:self];
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
