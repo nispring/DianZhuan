@@ -15,7 +15,7 @@
 @property (nonatomic, assign) NSUInteger displayTime;  // 广告展现时长，单位为秒。使用后台参数或系统默认时，设置为0。最小值30，只在Banner有效
 
 + (id)request;
-
+//
 + (id)requestWithRequestInterval:(NSUInteger)requestInterval
                   andDisplayTime:(NSUInteger)displayTime;
 
